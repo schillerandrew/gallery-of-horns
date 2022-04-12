@@ -1,6 +1,27 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
 
+class Main extends React.Component {
+  render() {
+    return (
+      <>
+      {beasts.map(beast => {
+          return (
+            <HornedBeast
+              beastName={beast.title}
+              imageUrl={beast.image_url}
+              description={beast.description}
+            />
+          )
+        })
+      }
+      </>
+    )
+  }
+}
+
+export default Main;
+
 let beasts = [
   {
     "_id": 1,
@@ -165,23 +186,3 @@ let beasts = [
 ]
 
 
-class Main extends React.Component {
-  render() {
-    return (
-      <>
-      {beasts.map(beast => {
-          return (
-            <HornedBeast
-              title={beast.title}
-              imageURL={beast.image_url}
-              description={beast.title}
-            />
-          )
-        })
-      }
-      </>
-    )
-  }
-}
-
-export default Main;

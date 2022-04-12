@@ -1,12 +1,26 @@
 import React from 'react';
 
 class HornedBeast extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      votes: 0
+    }
+  }
+
+  handleVotes = () => {
+    this.setState( {
+      votes: this.state.votes + 1
+    })
+  }
+
   render() {
     return (
       <>
-        <h2>{this.props.title}</h2>
+        <h2>{this.props.beastName} <small>(💖 {this.state.votes} votes)</small></h2>
         <img
-          src={this.props.imageURL}
+          onClick={this.handleVotes}
+          src={this.props.imageUrl}
           alt={this.props.description}
           title={this.props.description}
         />
@@ -15,5 +29,7 @@ class HornedBeast extends React.Component {
     )
   }
 }
+
+
 
 export default HornedBeast;
