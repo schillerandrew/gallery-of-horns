@@ -1,3 +1,20 @@
+body {
+  background-color: lightgoldenrodyellow;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18vw;
+  margin-bottom: 9vw;
+  margin-top: 2vw;
+}
+
+footer p {
+  text-align: center;
+}
+
+/* 
+
 .App {
   text-align: center;
 }
@@ -35,4 +52,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

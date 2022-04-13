@@ -3,7 +3,9 @@ import React from 'react';
 class Header extends React.Component {
   render() {
     return (
-      <h1>Gallery of Horns</h1>
+      <header>
+      <h1 instructions="Click images below below, to give a horn a heart!">🐂🐲🦏<strong><strong>Gallery of Horns</strong></strong> 🦄</h1>
+      </header>
     )
   }
 }

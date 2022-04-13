@@ -1,10 +1,11 @@
 import React from 'react';
 import HornedBeast from './HornedBeast';
+import './Main.css';
 
 class Main extends React.Component {
   render() {
     return (
-      <>
+      <main>
       {beasts.map(beast => {
           return (
             <HornedBeast
@@ -15,7 +16,7 @@ class Main extends React.Component {
           )
         })
       }
-      </>
+      </main>
     )
   }
 }
