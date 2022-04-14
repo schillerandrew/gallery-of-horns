@@ -3,12 +3,18 @@
 by Andrew Schiller
 
 > ## Features
--20 images and descriptions of horned beasts
--vote for images by clicking on them, and see your votes tally in real-time
--stylish header
+- 20 images and descriptions of horned beasts
+- vote for images by clicking on them, and see your votes tally in real-time
+- stylish header
 
 > ### Time estimates
 
+- **Number and name of feature:** Feature #4, Display a model
+- **Estimated ETA:** 90 mins
+- **Start time:** 4:30
+- **Finish time:** 
+- **Actual ETA:** 
+---
 - **Number and name of feature:** Feature #1, Display images
 - **Estimated ETA:** 15 mins
 - **Start time:** 2:17
