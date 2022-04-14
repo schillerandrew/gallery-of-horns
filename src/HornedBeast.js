@@ -10,10 +10,11 @@ class HornedBeast extends React.Component {
     }
   }
 
-  handleVotes = () => {
+  handleImageClick = () => {
     this.setState({
       votes: this.state.votes + 1
-    })
+    });
+    this.props.showBeastHandler(this.props.name, this.props.imageUrl,this.props.description);
   }
 
   render() {
@@ -22,9 +23,9 @@ class HornedBeast extends React.Component {
         <Card>
           <Card.Header>💖 {this.state.votes} votes</Card.Header>
           <Card.Body>
-            <Card.Title>{this.props.beastName}</Card.Title>
+            <Card.Title>{this.props.name}</Card.Title>
             <img
-              onClick={this.handleVotes}
+              onClick={this.handleImageClick}
               src={this.props.imageUrl}
               alt={this.props.description}
               title={this.props.description}
@@ -32,19 +33,9 @@ class HornedBeast extends React.Component {
             <Card.Text>{this.props.description}</Card.Text>
           </Card.Body>
         </Card>
-        {/* <h2>{this.props.beastName} <small>(💖 {this.state.votes} votes)</small></h2>
-        <img
-          onClick={this.handleVotes}
-          src={this.props.imageUrl}
-          alt={this.props.description}
-          title={this.props.description}
-        />
-        <p>{this.props.description}</p> */}
       </>
     )
   }
 }
-
-
 
 export default HornedBeast;
