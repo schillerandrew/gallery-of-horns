@@ -6,12 +6,14 @@ class Main extends React.Component {
   render() {
     return (
       <main>
-      {this.props.data.map(beast => {
+      {this.props.data.map( beast => {
           return (
             <HornedBeast
-              beastName={beast.title}
+              name={beast.title}
               imageUrl={beast.image_url}
+              key={beast._id}
               description={beast.description}
+              showBeastHandler={this.props.showBeastHandler}
             />
           )
         })
