@@ -19,7 +19,7 @@ class App extends React.Component {
     this.setState({
       showModal: false
     });
-  };
+  }
 
   showBeastHandler = (name, imageUrl, description) => {
     this.setState({

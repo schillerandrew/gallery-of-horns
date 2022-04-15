@@ -7,6 +7,7 @@ by Andrew Schiller
 - vote for images by clicking on them, and see your votes tally in real-time
 - stylish header
 - pop-up modal on image click
+- only show certain beasts according to how many horns they have
 
 > ### Time estimates
 

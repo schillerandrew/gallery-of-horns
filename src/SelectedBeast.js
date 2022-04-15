@@ -23,8 +23,8 @@ class SelectedBeast extends React.Component {
           </Modal.Body>
         </Modal>
       </>
-    )
-  }
+    );
+  };
 }
 
 export default SelectedBeast;
