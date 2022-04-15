@@ -7,7 +7,7 @@ class HornedBeast extends React.Component {
     super(props);
     this.state = {
       votes: 0
-    }
+    };
   }
 
   handleImageClick = () => {
@@ -19,7 +19,6 @@ class HornedBeast extends React.Component {
 
   render() {
     return (
-      <>
         <Card>
           <Card.Header>💖 {this.state.votes} votes</Card.Header>
           <Card.Body>
@@ -33,7 +32,6 @@ class HornedBeast extends React.Component {
             <Card.Text>{this.props.description}</Card.Text>
           </Card.Body>
         </Card>
-      </>
     )
   }
 }
